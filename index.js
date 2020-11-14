@@ -121,12 +121,6 @@ lineReader.on("line", (line) => {
     } else inst = instDec.toString(10);
   }
 
-  console.log("Instruction:", line);
-  console.log("radix (DEC):", instDec);
-  console.log("radix (HEX):", instHex);
-  console.log("radix (BIN):", inst);
-  console.log("===================================");
-
   try {
     if (args.mif === "1") {
       inst = `\t${index}\t:\t${inst};`;

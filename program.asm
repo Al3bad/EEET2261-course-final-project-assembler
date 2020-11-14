@@ -1,4 +1,5 @@
-# This is test text
+# program.asm
+# This is test comment
 
 LA    a0, 0
 lw    a1, 1(a0)
