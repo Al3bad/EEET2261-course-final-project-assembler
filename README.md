@@ -112,7 +112,7 @@ if we want the output to be in hexadecimal representation and use it in Quantus 
 node index.js -radix HEX -mif 1
 ```
 
-OUTPUT (output.txt):
+OUTPUT (output.mif):
 
 ```
 WIDTH=16;
