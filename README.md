@@ -51,7 +51,7 @@ option       | values (default)       | description
 ------------ | ------------- | -------------
 -radix       | BIN or HEX or UNS (BIN) | The representation of the assembled instructions values
 -mif         | 0 or 1 (0) | If 1, the output will be a .mif file that can be understood and used in Quartus Prime software
--depth       | <number> (256) | The number of address in RAM
+-depth       | <number> (256) | The number of address in ROM (will be used only if -mif is 1)
 
 
 ### Examples
