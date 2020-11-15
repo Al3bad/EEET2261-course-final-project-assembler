@@ -2,7 +2,7 @@
 
 ### Project description
 
-This little program is assembler for a custom designed instruction set. It is a part of a final project in Computer Architecture & Organization course, it was not a part of the assignment and was built just for fun.
+This little script is assembler for a custom designed instruction set. It is a part of a final project in Computer Architecture & Organization course, it was not a part of the assignment and was built just for fun.
 
 ### requirements
 
@@ -32,26 +32,26 @@ BLT | Branch if less then
 
 ### Instruction formats
 
-This program will assemble the instructions in 'program.asm' into those instruction formats:
+This script will assemble the instructions in 'program.asm' into those instruction formats:
 
 ![Instruction formats](/imgs/instruction-formats.png)
 
 ### Usage
 
-Both the program and the assembly code should be in the same directory, and the program should be named "program.asm". Run this script in the terminal:
+Both the script and the assembly code should be in the same directory, and the program should be named "program.asm". Run this command in the terminal:
 
 ```
 node index.js [options]
 ```
 
-The program can take three options:
+The script can take three options:
 
 
 option       | values (default)       | description
 ------------ | ------------- | -------------
 -radix       | BIN or HEX or UNS (BIN) | The representation of the assembled instructions values
 -mif         | 0 or 1 (0) | If 1, the output will be a .mif file that can be understood and used in Quartus Prime software
--depth       | <number> (256) | The number of address in ROM (will be used only if -mif is 1)
+-depth       | <number> (256) | The number of addresses in ROM (will be used only if -mif is 1)
 
 
 ### Examples
@@ -106,7 +106,7 @@ OUTPUT (output.txt):
 0000000100110010
 ```
 
-if we want the output to be in hexadecimal representation and use it in Quantus Prime software, we write this command:
+if we want the output to be in hexadecimal representation and use it in Quartus Prime software, we write this command:
 
 ```
 node index.js -radix HEX -mif 1
